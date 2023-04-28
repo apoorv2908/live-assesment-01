@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Playfair+Display&display=swap');
+
+
+.box1{
+    height: 60px;
+    background-color: purple;
+    width: auto;
+    color: white;
+    font-size: 200%;
+    padding-left: 10px;
+    padding-top: 40px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+body{
+
+    background-color: rgb(228, 205, 102);
+}
+
+.middlebox{
+    display: flex;
+    gap: 10px;
+}
+
+.boxa{
+    margin-left: 20px;
+
+
+}
+
+.boxb{
+    margin-top: 50px;
+    width: 650px;
+    margin-left: 30px;
+
+}
+
+.boxc{
+    height: 320px;
+    width: 300px;
+    background-color: rgb(39, 95, 218);
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+}
+
+.es{
+    font-size: 150%;
+}
+
+.m1{
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.fact{
+    margin-top: 10px;
+    font-size: larger;
+
+}
+
+.rboxes{
+    background-color: rgb(39, 95, 218);
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: large;
+}
+
+.lastbox{
+
+    height: 30px;
+    background-color: rgb(39, 95, 218);
+    width: auto;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+
+/*------Media Query--------*/
+
+@media screen  and (min-width: 768px) and (max-width: 1024px){
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .middlebox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxa{
+        margin-left: 0px;
+    }
+
+   .rboxes{
+    width: 700px;
+    margin-left: 0px;
+   }
+
+   .boxb{
+    margin-left: 0px;
+   }
+   
+   .boxc{
+    width: 750px;
+   }
+}
+
+
+
+
+
+@media screen and (max-width: 414px){
+
+    *{
+        overflow-x: hidden;
+    }
+    
+    .middlebox{
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .boxa{
+        margin-left: 0px;
+    }
+
+   .rboxes{
+    width: 390px;
+    margin-left: 0px;
+   }
+
+   .fact{
+    font-size: smaller;
+   }
+
+   .boxb{
+    margin-left: 0px;
+
+   }
+    
+   .m1{ margin-top: -40px;}
+
+   .boxc{
+    width: 395px;
+   }
+
+   .lastbox{
+    width: auto;
+    padding-top: 10px;
+    font-size: small;
+   }
+}
